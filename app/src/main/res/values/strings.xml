@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Kiesha Red Emojis</string>
+    <string name="subtype_en_US">English (US)</string>
+    <string name="p1_header">Thanks for downloading\nKiesha Red Emojis!</string>
+    <string name="p1_text">Enable Kiesha Red Emojis\nin your settings by following\nthese instructions</string>
+    <!--<string name="link_1"> </string> -->
+    <string name="link_2">How to install</string>
+    <string name="link_4">Contact Us</string>
+    <!-- <string name="link_5"> </string> -->
+    <string name="selectJunimoji"> </string>
+    <string name="enableJunimoji"> </string>
+    <string name="email_mailto">support@myanimoji.com</string>
+    <string name="email_subject">Kiesha Red Android Keyboard</string>
+</resources>

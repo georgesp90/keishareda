@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="rokomobi-android-sdk-1.2.54.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b250642ba5d22e9d9586c4b00fe28045986dc694/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b250642ba5d22e9d9586c4b00fe28045986dc694/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b250642ba5d22e9d9586c4b00fe28045986dc694/output/jars/libs/sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
