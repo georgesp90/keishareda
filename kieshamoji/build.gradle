@@ -3,12 +3,12 @@ apply plugin: 'com.android.library'
 def ROKOMojiVersionCode = 11;
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
-        minSdkVersion 23
-        targetSdkVersion 25
+        minSdkVersion 19
+        targetSdkVersion 26
         versionCode ROKOMojiVersionCode
 
     }
@@ -32,11 +32,11 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
 
-    compile 'com.android.support:support-v13:25.0.1'
+    compile 'com.android.support:support-v13:26.1.0'
 
     compile 'com.rokolabs:rokomobi-android-sdk:1.2.+@aar'
-    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.google.code.gson:gson:2.8.0'
 }

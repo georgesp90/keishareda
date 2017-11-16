@@ -1,0 +1,16 @@
+# Android Studio generated files
+.gradle/
+.idea/
+build/
+*.iml
+
+# App
+app/.externalNativeBuild
+
+# Local configuration
+local.properties
+/app/sign*.properties
+/app/prod/
+
+# Misc
+.DS_Store
