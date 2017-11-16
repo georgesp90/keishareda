@@ -1,45 +1,39 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
     defaultConfig {
         applicationId "com.kieshalabs.keyboard"
-        minSdkVersion 23
-        targetSdkVersion 25
+        minSdkVersion 19
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
-    signingConfigs {
-        release {
-        }
-    }
+
     buildTypes {
         release {
-            signingConfig signingConfigs.release
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'jni/Android.mk'
         }
     }
     lintOptions {
-        abortOnError false
+        disable 'MissingTranslation'
     }
-}
-repositories {
-    maven {
-        url 'https://artifactory.roko.mobi/artifactory/libs-release'
+    aaptOptions {
+        noCompress "dict"
     }
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.android.support:recyclerview-v7:25.0.1'
-    compile 'com.android.support:support-v13:25.0.1'
+    compile 'com.google.code.findbugs:jsr305:3.0.2'
+    compile 'com.android.support:support-compat:26.1.0'
+    compile 'com.android.support:support-core-ui:26.1.0'
     compile project(':kieshamoji')
-    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') { exclude module: 'support-v13' }
-    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
-    compile('com.github.hotchemi:permissionsdispatcher:2.4.0') { exclude module: 'support-v13' }
-    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
-    compile('com.github.hotchemi:permissionsdispatcher:2.4.0')
-    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
 }
